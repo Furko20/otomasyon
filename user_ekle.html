@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Ekle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kullanıcı Ekle</h2>
+        <form action="user_ekle.php" method="POST">
+            <input type="text" name="username" placeholder="Kullanıcı Adı" required class="input-field"><br>
+            <input type="password" name="password" placeholder="Şifre" required class="input-field"><br>
+            <label for="role">Rol:</label>
+            <select name="role" class="input-field">
+                <option value="admin">Admin</option>
+                <option value="personel">Personel</option>
+            </select><br>
+            <button type="submit" class="button">Kullanıcı Ekle</button>
+        </form>
+    </div>
+</body>
+</html>

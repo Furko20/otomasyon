@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Personel Girişi</h2>
+        <form action="login_process.php" method="POST">
+            <input type="text" name="username" placeholder="Kullanıcı Adı" required class="input-field"><br><br>
+            <input type="password" name="password" placeholder="Şifre" required class="input-field"><br><br>
+            <button type="submit" class="button">Giriş Yap</button>
+        </form>
+        
+        <!-- Admin Girişi Butonu -->
+        <form action="admin_giris.php" method="POST">
+            <button type="submit" class="button">Admin Girişi</button>
+        </form>
+    </div>
+</body>
+</html>
